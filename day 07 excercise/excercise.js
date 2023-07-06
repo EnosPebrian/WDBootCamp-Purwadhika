@@ -83,9 +83,22 @@ console.log(merge_array(array1, array2));
 // ● Example :
 // ○ Input : [{ name: ‘David’, age: 20 }]
 // ○ Output : [{ David: ‘name’, 20: ‘age’}]
+input = [
+  { name: "David", age: 20 },
+  { name: "Enso", age: 29 },
+];
+console.log("\n\n----------NOMOR 4----------");
+function switch_keyvaluepair(obj) {
+  temp_obj = obj
+    .map((ob) => Object.entries(ob))
+    .map(([key, value]) => [value, key]);
+  return temp_obj.map((arr) => Object.fromEntries(arr));
+}
+console.log(switch_keyvaluepair(input));
+// console.log(input.map((ob) => Object.entries(ob)).map(([key, value]) => [value, key]));
 
 // ● Create a function to find a factorial number using recursion
-console.log("\n\n----------NOMOR 4----------");
+console.log("\n\n----------NOMOR 5----------");
 function factorial(number) {
   let total = 1;
   if (number == 0 || number == 1) return total;
