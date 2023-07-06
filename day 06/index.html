@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .div {
+        display: block;
+      }
+      .notshowup {
+        width: 100%;
+        margin: auto;
+        display: inline-block;
+        text-align: center;
+      }
+      .showup {
+        display: none;
+        width: 50%;
+        margin: auto;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body style="background-color: aquamarine">
+    <div class="notshowup">
+      <div>
+        <video controls>
+          <source class="video" src="./Kapal Laut.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="div">
+        <img src="./aaa.jpg" />
+      </div>
+    </div>
+    <div class="showup">
+      <p id="Checkout"></p>
+    </div>
+  </body>
+  <script>
+    let database = [];
+    let user = {};
+    let pilihan = " ";
+    let mail;
+    let pass;
+    while (pilihan != 3) {
+      pilihan = prompt("1. Register\n2. Log in\n3. Exit");
+      if (pilihan == 1) {
+        user.email = prompt("Your email: ");
+        user.password = prompt("Your email: ");
+        database.push(user);
+        alert("Your account has been registered");
+        continue;
+      } else if (pilihan == 2) {
+        mail = prompt("e-mail: ");
+        pass = prompt("password: ");
+        if (
+          database.find(
+            ({ email, password }) => email == mail && password == pass
+          )
+        ) {
+          alert("You are logged in");
+          var hideVideo = document.getElementsByClassName("notshowup")[0];
+          hideVideo.style.display = "none";
+          var showup = document.getElementsByClassName("showup")[0];
+          showup.style.display = "block";
+          break;
+        } else {
+          alert("SALAH USERNAME ATAU PASSWORD WOI!");
+          continue;
+        }
+      } else if (pilihan == 3) {
+        break;
+      }
+    }
+  </script>
+  <script src="excercise.js"></script>
+</html>
