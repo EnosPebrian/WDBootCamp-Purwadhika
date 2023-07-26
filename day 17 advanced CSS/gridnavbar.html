@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .container > div {
+        background-color: aqua;
+        text-align: center;
+        border: 1px solid black;
+      }
+      .container {
+        margin: auto;
+        display: grid;
+        height: 100vh;
+        width: 100vw;
+        grid-template-columns: 100px 1fr;
+        grid-template-rows: 50px 1fr 1fr 1fr 20px;
+        gap: 2px
+      }
+      .container > div:nth-child(even) {
+        background-color: aquamarine;
+
+      }
+      .container > .navbar {
+        grid-area: 1/1/2/3;
+        padding: 0;
+        margin: 0;
+        background-color: beige;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+      }
+      .container > div.sidebar {
+        grid-row: 2/-2;
+        padding: 10px;
+        background-color: darkkhaki;
+      }
+      .container > div.footer {
+        order: 10;
+        grid-column: span 2;
+        grid-row:-1
+        background-color: azure;
+      }
+      .navbar > a {
+        background-color: chartreuse;
+        border-radius: 5px;
+        padding: 5px;
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <span><h2>navbar</h2></span>
+        <a href="hihi.html">Login</a>
+      </div>
+      <div class="sidebar">
+        sidebar
+        <a href="Home.html">About</a>
+      </div>
+      <div class="footer"><b>footer</b></div>
+      <div>
+        Weather forecast
+        <div style="margin-top: 20px">
+          <img
+            src="https://assets.msn.com/weathermapdata/1/static/weather/Icons/taskbar_v10/Condition_Card/MostlySunnyDay.svg"
+          />
+        </div>
+      </div>
+      <div>Headline news</div>
+      <div>Traffic monitoring</div>
+    </div>
+  </body>
+</html>

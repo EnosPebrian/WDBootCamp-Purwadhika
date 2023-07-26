@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 400px;
+        height: 400px;
+        margin: 50px;
+        background-color: purple;
+        transform: translate(100px, 100px);
+      }
+      .rotate {
+        width: 100px;
+        height: 100px;
+        margin: 50px;
+        background-color: red;
+        transform: rotate(45deg);
+      }
+      .triDrotate {
+        height: 100px;
+        width: 100px;
+        margin: 50px;
+        background-color: greenyellow;
+        transform: perspective(700px) translateX(100px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">box</div>
+    <div class="rotate">rotate</div>
+    <div class="triDrotate">3D rotate</div>
+  </body>
+</html>
