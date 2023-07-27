@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.nav-left {
+  color: white;
+  display: flex;
+}
+
+.nav-item {
+  padding: 12px 24px;
+}
+
+.nav-item:hover {
+  background-color: white;
+  color: black;
+}
+
+.nav-right:hover {
+  background-color: rgb(255, 88, 88);
+}
+
+.homepicture {
+  max-width: 2000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.flex-col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.color-white {
+  color: white;
+}
+
+.picture-text {
+  position: absolute;
+  bottom: 0;
+  padding: 32px 16px;
+}
+
+.about-component {
+  padding: 64px 16px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.personel {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.personel-name {
+  margin: 15px 0;
+}
+
+.tourdate-wrapper {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 64px 16px;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.list-tour {
+  padding: 0;
+  margin: 0;
+}
+
+.list-tour > li {
+  padding: 8px 16px;
+  border-bottom: 1px solid gray;
+  color: gray;
+}
+
+li > span {
+  background-color: #f44336;
+  color: white;
+  padding: 0px 8px;
+  margin: 0 0 0 16px;
+}
