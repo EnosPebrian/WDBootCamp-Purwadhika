@@ -1,0 +1,28 @@
+const Queue = require("./excercise.js");
+
+toko1 = new Queue();
+toko1.add_order("nasi goreng");
+toko1.add_order("pasta");
+toko1.add_order("kwetiaw");
+toko1.add_order("bihun goreng");
+toko1.add_order("fuyunghai");
+toko1.add_order("capcay");
+toko1.add_order("nasi goreng");
+toko1.add_order("pasta");
+toko1.add_order("kwetiaw");
+toko1.add_order("bihun goreng");
+toko1.add_order("fuyunghai");
+toko1.add_order("capcay");
+toko1.add_order("nasi goreng");
+toko1.add_order("pasta");
+toko1.add_order("kwetiaw");
+toko1.add_order("bihun goreng");
+toko1.add_order("fuyunghai");
+toko1.add_order("capcay");
+toko1.add_order("nasi goreng");
+toko1.add_order("pasta");
+toko1.add_order("kwetiaw");
+toko1.add_order("bihun goreng");
+toko1.add_order("fuyunghai");
+toko1.add_order("capcay");
+toko1.Process();

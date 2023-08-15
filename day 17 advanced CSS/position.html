@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .sidebar {
+        width: 100px;
+        height: 200px;
+        top: 20;
+        position: fixed;
+        background-color: blanchedalmond;
+      }
+      .static {
+        background-color: antiquewhite;
+        position: static;
+      }
+      .relative {
+        background-color: aqua;
+        position: relative;
+        left: 30px;
+        top: 10px;
+      }
+      .absolute {
+        background-color: aquamarine;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+      }
+      .navbar1 {
+        position: absolute;
+        top: 0;
+      }
+      .navbar2 {
+        position: sticky;
+        top: 0;
+      }
+      .navbar3 {
+        position: fixed;
+        top: 0;
+        left: 500px;
+      }
+      .content {
+        height: 100vh;
+        padding: 50px;
+      }
+      .container {
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar1">NAVBAR Absolute</div>
+    <div class="navbar2">NAVBAR sticky</div>
+    <div class="navbar3">NAVBAR Fixed</div>
+    <div class="sidebar">SIDEBAR</div>
+    <div class="content">CONTENT</div>
+    <div class="container">
+      <div class="static">static</div>
+      <div class="relative">relative</div>
+      <div class="absolute">absolute</div>
+      <div class="fixed">fixed</div>
+      <div class="sticky">sticky</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body
+    style="
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    "
+  >
+    <h1 style="text-align: center">Register</h1>
+    <form action="" method="post">
+      <fieldset
+        style="
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+          justify-content: center;
+          align-items: center;
+          width: 800px;
+        "
+      >
+        <input type="text" required name="username" placeholder="username" />
+        <input
+          type="password"
+          required
+          name="password"
+          placeholder="password"
+        />
+        <span>
+          <label for="male-gender">Male</label>
+          <input type="radio" name="gender" id="male-gender" />
+          <label for="female-gender">Female</label>
+          <input type="radio" name="gender" id="female-gender" />
+        </span>
+
+        <input
+          type="number"
+          placeholder="age"
+          type="number"
+          min="1"
+          max="10"
+          name="age"
+        />
+        <textarea rows="3" cols="64">address</textarea>
+        <span>asal sekolah:</span>
+        <select>
+          <optgroup label="Wizard">
+            <option value="1">Griffindor</option>
+          </optgroup>
+          <optgroup label="Fighter">
+            <option value="2">Tsuzuran</option>
+          </optgroup>
+        </select>
+        <span>
+          <label>Setuju?</label>
+          <input type="checkbox" />
+        </span>
+        <input type="submit" placeholder="Register" />
+      </fieldset>
+    </form>
+  </body>
+</html>
